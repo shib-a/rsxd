@@ -1,6 +1,6 @@
 export PGDATA=$HOME/qje95
 export PGENCODING=ISO_8859_5
-export PGLOCALE=ru_RU.$PGENCODING
+export PGLOCALE=ru_RU.iso88595
 export PGWAL=$HOME/jjt13
 
 mkdir $PGDATA
@@ -12,11 +12,11 @@ echo "port = 9091" >> $PGDATA/postgresql.conf
 echo "listen_addresses = '*'" >> $PGDATA/postgresql.conf
 
 echo "max_connections = 200" >> $PGDATA/postgresql.conf
-echo "shared_buffers = 4GB" >> $PGDATA/postgresql.conf
+echo "shared_buffers = 2GB" >> $PGDATA/postgresql.conf
 echo "temp_buffers = 8MB" >> $PGDATA/postgresql.conf
 echo "work_mem = 4MB" >> $PGDATA/postgresql.conf
 echo "checkpoint_timeout = 10min" >> $PGDATA/postgresql.conf
-echo "effective_cache_size = 12GB" >> $PGDATA/postgresql.conf
+echo "effective_cache_size = 6GB" >> $PGDATA/postgresql.conf
 echo "fsync = on" >> $PGDATA/postgresql.conf
 echo "commit_delay = 0" >> $PGDATA/postgresql.conf
 

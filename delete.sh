@@ -1,0 +1,9 @@
+export PGDATA=$HOME/qje95
+export PGWAL=$HOME/jjt13
+export PGTABLESPACE1=$HOME/ifu88
+export PGTABLESPACE2=$HOME/bqz31
+
+rm -rf $PGDATA
+rm -rf $PGWAL
+rm -rf $PGTABLESPACE1
+rm -rf $PGTABLESPACE2

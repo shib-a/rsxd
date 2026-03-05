@@ -92,3 +92,5 @@ LEFT JOIN pg_tablespace t ON t.oid = c.reltablespace
 WHERE n.nspname LIKE 'pg_temp_%'
 ORDER BY c.relname;
 SQL
+
+pg_ctl stop -D $PGDATA -m fast
